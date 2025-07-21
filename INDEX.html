@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Building Report Forms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Building Report Submission</h1>
+
+<div class="tabs">
+  <button class="tab" onclick="showForm('maintenance')">Maintenance</button>
+  <button class="tab" onclick="showForm('security')">Security</button>
+  <button class="tab" onclick="showForm('housekeeping')">Housekeeping</button>
+  <button class="tab" onclick="showForm('safetyMarshal')">Safety Marshal</button>
+  <button class="tab" onclick="showForm('parking')">Parking</button>
+</div>
+
+<div id="form-container">
+  <!-- Form will be loaded here dynamically -->
+</div>
+
+<h2>All Submissions</h2>
+<pre id="jsonOutput" class="json-box">{}</pre>
+
+<script src="script.js"></script>
+</body>
+</html>
